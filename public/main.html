@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" class="scroll-smoth">
+<html lang="en" data-theme="light" class="scroll-smoth" id="b">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -105,7 +105,7 @@
     <!-- Header End -->
 
     <!-- Welcome start -->
-    <div class="container">
+    <div class="container" id="home">
       <section class="hero min-h-screen bg-base-100 px-5 lg:px-0">
         <div class="hero-content flex-col lg:flex-row-reverse pt-24 lg:pt-0 lg:gap-20">
           <div class="indicator">
@@ -124,7 +124,7 @@
     <!-- Welcome end -->
 
     <!-- Sejarah start -->
-    <section class="hero min-h-screen" style="background-image: url(./img/gedung.png);">
+    <section class="hero min-h-screen bg-fixed" style="background-image: url(./img/gedung.png);">
       <div class="hero-overlay bg-opacity-70"></div>
       <div class="hero-content text-neutral-content">
         <div class="max-w-md lg:max-w-4xl">
@@ -170,27 +170,26 @@
                 <p class="font-semibold text-[7px] leading-[11px] pt-[1px] lg:text-[9px] lg:leading-[13px]">Politeknik Internasional<br>Tamansiswa Mojokerto</p>
             </span>
           </div>
-          <p><br/>Jl. Tamansiswa No 30, Kota Mojokerto, Jawa Timur, 61311<br>0321322937</p>
+          <p><br/>Jl. Tamansiswa No 30, Kota Mojokerto, Jawa Timur, 61311<br></p>
         </div> 
         <div>
-          <span class="footer-title">Services</span> 
-          <a class="link link-hover">Branding</a> 
-          <a class="link link-hover">Design</a> 
-          <a class="link link-hover">Marketing</a> 
-          <a class="link link-hover">Advertisement</a>
+          <span class="footer-title">Beranda</span> 
+          <a href="#sejarah" class="link link-hover">Sejarah</a> 
+          <a href="#tokoh-nasional" class="link link-hover">Tokoh Nasional</a>
+          <a href="./pages/visi-misi.html" class="link link-hover">Visi dan Misi</a>
         </div> 
         <div>
-          <span class="footer-title">Company</span> 
-          <a class="link link-hover">About us</a> 
-          <a class="link link-hover">Contact</a> 
-          <a class="link link-hover">Jobs</a> 
-          <a class="link link-hover">Press kit</a>
+          <span class="footer-title">Bidang Studi</span> 
+          <a href="./pages/teknologi-listrik.html" class="link link-hover">Teknologi Listrik</a> 
+          <a href="./pages/teknologi-mesin.html" class="link link-hover">Teknologi Mesin</a> 
+          <a href="./pages/teknologi-komputer.html" class="link link-hover">Teknologi Komputer</a>
         </div> 
         <div>
-          <span class="footer-title">Legal</span> 
-          <a class="link link-hover">Terms of use</a> 
-          <a class="link link-hover">Privacy policy</a> 
-          <a class="link link-hover">Cookie policy</a>
+          <span class="footer-title">Media Sosial</span>
+          <div class="grid grid-flow-col gap-4">
+            <a href="mailto:info@politekniktamansiswa-mjk.ac.id"><img src="./img/email.svg" alt="email-logo" class="w-[24px]"></a> 
+            <a href="https://www.instagram.com/politamamjk/" target="_blank"><img src="./img/instagram.svg" alt="instagram-logo" class="w-[24px]"></a>
+          </div>
         </div>
       </footer>
     </div>
