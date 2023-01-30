@@ -1,0 +1,39 @@
+                <!-- Card email input -->
+                <div class="card bg-base-100 shadow-xl">
+                    <div class="card-body">
+                      <div class="form-control w-full max-w-xs">
+                        <label class="label">
+                          <span class="label-text text-lg">Nama</span>
+                        </label>
+                        <input type="text" placeholder="Nama" class="input input-bordered w-full max-w-xs" />
+                      </div>
+                      <div class="form-control w-full max-w-xs">
+                        <label class="label">
+                          <span class="label-text text-lg">Email</span>
+                        </label>
+                        <input type="text" placeholder="nama@email.com" class="input input-bordered w-full max-w-xs" />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text text-lg">Pesan</span>
+                        </label>
+                        <textarea class="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
+                      </div>
+                      <input type="submit" value="Kirim" class="btn"/>
+                    </div>
+                </div>
+                
+                <!-- Card alamat -->
+                <div class="card bg-base-100 shadow-xl">
+                  <h1 class="text-xl font-medium">Alamat dan Kontak</h1>
+                  <div class="card-body">
+                      <span class="flex">
+                        <a href=""><img src="./img/location.svg" alt="location-icon" class="w-[60px]"></a>
+                        <p class="text-left pl-2">Jalan Tamansiswa Nomor 30 Kota Mojokerto Jawa Timur 61311</p>
+                      </span>
+                      <span class="flex">
+                        <a href=""><img src="./img/phone.svg" alt="telephone-icon" class="w-[25px]"></a>
+                        <p class="text-left pl-2">0321322937</p>
+                      </span>
+                  </div>
+                </div>
