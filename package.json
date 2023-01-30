@@ -1,0 +1,24 @@
+{
+  "name": "politama-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./public/dist/output.css --watch",
+    "build-js": "npx esbuild ./src/alpine.js --outfile=./public/script/script.js --bundle --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "prettier": "^2.8.3",
+    "prettier-plugin-tailwindcss": "^0.2.2",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "alpinejs": "^3.11.1",
+    "daisyui": "^2.49.0",
+    "esbuild": "^0.17.4"
+  }
+}
