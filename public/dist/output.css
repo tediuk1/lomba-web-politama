@@ -761,6 +761,12 @@ html{
   pointer-events: none;
 }
 
+.btn-square{
+  height: 3rem;
+  width: 3rem;
+  padding: 0px;
+}
+
 .btn-circle{
   height: 3rem;
   width: 3rem;
@@ -1128,6 +1134,12 @@ html{
   border-radius: var(--rounded-btn, 0.5rem);
 }
 
+.input-group{
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
 .input-group > .input{
   isolation: isolate;
 }
@@ -1137,6 +1149,52 @@ html{
   .input-group > .textarea,
   .input-group > .select{
   border-radius: 0px;
+}
+
+.input-group-md{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  line-height: 2;
+}
+
+.input-group-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 2;
+}
+
+.input-group-sm{
+  font-size: 0.875rem;
+  line-height: 2rem;
+}
+
+.input-group-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+  line-height: 1.625;
+}
+
+.input-group :where(span){
+  display: flex;
+  align-items: center;
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.input-group > :first-child{
+  border-top-left-radius: var(--rounded-btn, 0.5rem);
+  border-top-right-radius: 0;
+  border-bottom-left-radius: var(--rounded-btn, 0.5rem);
+  border-bottom-right-radius: 0;
+}
+
+.input-group > :last-child{
+  border-top-left-radius: 0;
+  border-top-right-radius: var(--rounded-btn, 0.5rem);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: var(--rounded-btn, 0.5rem);
 }
 
 .link{
@@ -2324,6 +2382,14 @@ html{
   font-size: 0.875rem;
 }
 
+.btn-lg{
+  height: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  min-height: 4rem;
+  font-size: 1.125rem;
+}
+
 .btn-square:where(.btn-xs){
   height: 1.5rem;
   width: 1.5rem;
@@ -2339,6 +2405,12 @@ html{
 .btn-square:where(.btn-md){
   height: 3rem;
   width: 3rem;
+  padding: 0px;
+}
+
+.btn-square:where(.btn-lg){
+  height: 4rem;
+  width: 4rem;
   padding: 0px;
 }
 
@@ -2420,6 +2492,41 @@ html{
   bottom: auto;
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.input-xs{
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  line-height: 1.625;
+}
+
+.input-md{
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  line-height: 2;
+}
+
+.input-lg{
+  height: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 2;
+}
+
+.input-sm{
+  height: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 2rem;
 }
 
 .menu-horizontal{
@@ -2675,6 +2782,14 @@ html{
   height: 6rem;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
+.h-4{
+  height: 1rem;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -2745,6 +2860,14 @@ html{
 
 .w-\[300px\]{
   width: 300px;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
+.w-4{
+  width: 1rem;
 }
 
 .max-w-\[320px\]{
@@ -3336,6 +3459,10 @@ html{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
+
+  .sm\:hidden{
+    display: none;
+  }
 }
 
 @media (min-width: 1024px){
@@ -3357,6 +3484,10 @@ html{
 
   .lg\:ml-1{
     margin-left: 0.25rem;
+  }
+
+  .lg\:block{
+    display: block;
   }
 
   .lg\:flex{
@@ -3519,6 +3650,22 @@ html{
 
   .lg\:pl-3{
     padding-left: 0.75rem;
+  }
+
+  .lg\:pr-3{
+    padding-right: 0.75rem;
+  }
+
+  .lg\:pr-5{
+    padding-right: 1.25rem;
+  }
+
+  .lg\:pr-4{
+    padding-right: 1rem;
+  }
+
+  .lg\:pr-6{
+    padding-right: 1.5rem;
   }
 
   .lg\:text-\[18px\]{
