@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "npx tailwindcss -i ./src/input.css -o ./public/dist/output.css --watch",
-    "build-js": "npx esbuild ./src/alpine.js --outfile=./public/script/script.js --bundle --watch"
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./public/dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
