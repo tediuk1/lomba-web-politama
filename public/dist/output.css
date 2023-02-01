@@ -2541,6 +2541,14 @@ html{
   margin-bottom: 1.25rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
+.ml-1{
+  margin-left: 0.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -2563,6 +2571,10 @@ html{
 
 .h-24{
   height: 6rem;
+}
+
+.h-12{
+  height: 3rem;
 }
 
 .min-h-screen{
@@ -2589,12 +2601,20 @@ html{
   width: 60px;
 }
 
-.w-\[25px\]{
-  width: 25px;
+.w-\[28px\]{
+  width: 28px;
+}
+
+.w-\[27px\]{
+  width: 27px;
 }
 
 .w-\[24px\]{
   width: 24px;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .max-w-\[290px\]{
@@ -2620,6 +2640,10 @@ html{
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.list-decimal{
+  list-style-type: decimal;
 }
 
 .list-disc{
@@ -2675,6 +2699,10 @@ html{
   border-width: 1px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-b-2{
   border-bottom-width: 2px;
 }
@@ -2691,8 +2719,8 @@ html{
   border-bottom-width: 4px;
 }
 
-.border-t-2{
-  border-top-width: 2px;
+.border-t{
+  border-top-width: 1px;
 }
 
 .border-current{
@@ -2853,6 +2881,18 @@ html{
   padding-left: 1.75rem;
 }
 
+.pb-7{
+  padding-bottom: 1.75rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
+}
+
+.pt-14{
+  padding-top: 3.5rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -2940,6 +2980,10 @@ html{
   line-height: 2.25rem;
 }
 
+.leading-8{
+  line-height: 2rem;
+}
+
 .tracking-\[4px\]{
   letter-spacing: 4px;
 }
@@ -3023,6 +3067,10 @@ html{
     margin-left: 0.75rem;
   }
 
+  .lg\:ml-4{
+    margin-left: 1rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -3083,6 +3131,14 @@ html{
     max-width: none;
   }
 
+  .lg\:max-w-md{
+    max-width: 28rem;
+  }
+
+  .lg\:max-w-xl{
+    max-width: 36rem;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -3093,6 +3149,14 @@ html{
 
   .lg\:gap-20{
     gap: 5rem;
+  }
+
+  .lg\:gap-24{
+    gap: 6rem;
+  }
+
+  .lg\:gap-60{
+    gap: 15rem;
   }
 
   .lg\:gap-x-10{
@@ -3121,16 +3185,32 @@ html{
     padding-top: 0.75rem;
   }
 
-  .lg\:pl-2{
-    padding-left: 0.5rem;
+  .lg\:pt-10{
+    padding-top: 2.5rem;
   }
 
   .lg\:pl-3{
     padding-left: 0.75rem;
   }
 
-  .lg\:pt-10{
-    padding-top: 2.5rem;
+  .lg\:pl-2{
+    padding-left: 0.5rem;
+  }
+
+  .lg\:pt-20{
+    padding-top: 5rem;
+  }
+
+  .lg\:pb-4{
+    padding-bottom: 1rem;
+  }
+
+  .lg\:pt-6{
+    padding-top: 1.5rem;
+  }
+
+  .lg\:pb-2{
+    padding-bottom: 0.5rem;
   }
 
   .lg\:pt-28{
@@ -3139,10 +3219,6 @@ html{
 
   .lg\:pt-9{
     padding-top: 2.25rem;
-  }
-
-  .lg\:pt-6{
-    padding-top: 1.5rem;
   }
 
   .lg\:text-\[18px\]{
@@ -3172,9 +3248,24 @@ html{
     font-size: 9px;
   }
 
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .lg\:leading-\[16px\]{
@@ -3187,6 +3278,10 @@ html{
 
   .lg\:leading-tight{
     line-height: 1.25;
+  }
+
+  .lg\:leading-8{
+    line-height: 2rem;
   }
 
   .lg\:tracking-\[6px\]{
