@@ -7,6 +7,8 @@
     <title>Beranda | Politeknik Internasional Tamansiswa Mojokerto</title>
     <link rel="shortcut icon" href="./img/icon/logo-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="./script/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 </head>
@@ -53,7 +55,7 @@
               </ul>
             </div>
             <!-- Dropdown end -->
-            <div class="flex justify-center cursor-pointer items-center hover:scale-105 duration-300">
+            <div class="animate__animated animate__pulse animate__slow 1s flex justify-center cursor-pointer items-center hover:scale-105 duration-300">
               <img src="./img/icon/logo-icon.svg" class="w-[50px] px-2 md:w-[70px] lg:w-[75px]" alt="logo-politama">
               <span class="flex flex-col">
                   <h1 class="text-[10px] uppercase tracking-[4px] font-bold border-b border-current md:text-[16px] lg:text-[18px] lg:tracking-[6px]">Politama</h1>
@@ -115,15 +117,15 @@
     <div class="container" id="home">
       <section class="hero min-h-screen bg-base-100 px-4 pb-8 lg:px-0">
         <div class="hero-content flex-col lg:flex-row-reverse pt-24 md:pt-32 lg:pt-12 lg:gap-x-28">
-          <div class="indicator">
+          <div class="indicator" data-aos="zoom-in" data-aos-duration="500">
             <span class="indicator-item badge badge-primary w-10 h-10 mr-2 md:mt-4 md:mr-8 md:w-24 md:h-24 rounded-full lg:w-24 lg:h-24 lg:mt-7 lg:mr-5"></span>
-            <img src="./img/gerbang.jpg" class="max-w-[290px] md:max-w-[600px] lg:max-w-md xl:max-w-xl lg:mt-7 rounded-3xl shadow-2xl" />
+            <img src="./img/politama.webp" class="max-w-[290px] md:max-w-[600px] lg:max-w-md xl:max-w-xl lg:mt-7 rounded-3xl shadow-2xl" />
           </div>
           <div>
-            <h1 class="text-5xl leading-15 font-bold pt-4 text-accent md:text-7xl lg:text-3xl xl:text-6xl">Selamat Datang</h1>
-            <h2 class="text-3xl leading-9 font-semibold pt-6 md:pt-3 md:text-4xl lg:text-2xl lg:pt-3 xl:text-3xl">di Website Politeknik Internasional<br>Tamansiswa Mojokerto</h2>
-            <p class="py-6 font-thin md:text-xl lg:text-lg">Kami harap Anda akan menikmati pengalaman belajar di Politeknik Internasional Tamansiswa Mojokerto dan menemukan banyak hal baru.<br>Selamat berpetualang!.</p>
-            <a href="#sejarah"><button class="btn btn-primary px-6 py-3 md:btn-lg ">Sejarah Tamansiswa</button></a>
+            <h1 class="text-5xl leading-15 font-bold pt-4 text-accent md:text-7xl lg:text-3xl xl:text-6xl" data-aos="fade-right">Selamat Datang</h1>
+            <h2 class="text-3xl leading-9 font-semibold pt-6 md:pt-3 md:text-4xl lg:text-2xl lg:pt-3 xl:text-3xl" data-aos="fade-right" data-aos-duration="500">di Website Politeknik Internasional<br>Tamansiswa Mojokerto</h2>
+            <p class="py-6 font-thin md:text-xl lg:text-lg" data-aos="fade-right" data-aos-duration="1000">Kami harap Anda akan menikmati pengalaman belajar di Politeknik Internasional Tamansiswa Mojokerto dan menemukan banyak hal baru.<br>Selamat berpetualang!.</p>
+            <a href="#sejarah"><button class="btn btn-primary px-6 py-3 md:btn-lg" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">Sejarah Tamansiswa</button></a>
           </div>
         </div>
       </section>
@@ -131,16 +133,16 @@
     <!-- Welcome end -->
 
     <!-- Sejarah start -->
-    <section class="hero min-h-screen bg-fixed" id="sejarah" style="background-image: url(./img/gedung.png);">
+    <section class="hero min-h-screen bg-fixed" id="sejarah" style="background-image: url(./img/gedung.webp);">
       <div class="hero-overlay bg-opacity-70"></div>
-      <div class="hero-content px-12 my-7 text-neutral-content">
+      <div class="hero-content px-12 my-7 text-neutral-content" data-aos="fade-up" data-aos-duration="1500">
         <div class="max-w-md lg:max-w-4xl">
           <h1 class="mb-5 pb-4 text-3xl text-center text-accent font-bold border-b-4 border-base-100 md:text-5xl lg:text-5xl xl:pt-14">Sejarah Tamansiswa</h1>
           <p class="mb-5 text-md font-normal md:text-lg lg:text-lg">Tanggal <span class="font-semibold">3 Juli 1922</span> merupakan hari yang bersejarah bagi bangsa Indonesia dengan lahirnya Perguruan Tamansiswa disebut Yayasan Persatuan Perguruan Tamansiswa yang berpusat di Yogyakarta ( Majelis Luhur).<br><br>
             Tamansiswa adalah sebuah Perguruan Nasional yang berwawasan kebangsaan serta bertujuan untuk mengentaskan bangsa Indonesia dari kebodohan, kemiskinan dan keterbelakangan. Tamansiswa sebagai Badan Perjuangan Kebudayaan dan Pembangunan masyarakat dengan Pendidikan sebagai sarana utamanya dalam arti luas dimana selalu ingin meningkatkan kualitas pengabdian pada Masyarakat, Nusa dan Bangsa.<br><br>
             Tamansiswa menamakan dirinya “Perguruan” dalam bahasa jawa <span class="font-bold">“Paguron”</span>. Paguron dari asal guru arti harafiahnya rumah tempat tinggal guru, tempat orang datang berguru. Paguron sebenarnya tidak hanya tempat maupun pusat belajar, tetapi juga merupakan sumber ajaran ilmu pengetahuan, sumber ajaran hidup (Life skill).
             .</p>
-          <a href="#tokoh-nasional"><button class="btn btn-primary md:btn-lg xl:mb-4">Tokoh Nasional</button></a>
+          <a href="#tokoh-nasional"><button class="btn btn-primary md:btn-lg xl:mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Tokoh Nasional</button></a>
         </div>
       </div>
     </section>
@@ -149,19 +151,19 @@
     <!-- Tokoh nasional start -->
     <div class="container bg-base-200 border-b border-current" id="tokoh-nasional">
       <section class="hero min-h-screen px-4 lg:px-0">
-        <div class="hero-content flex-col lg:flex-row pt-24 lg:pt-0 lg:gap-20">
+        <div class="hero-content flex-col lg:flex-row pt-24 lg:pt-0 lg:gap-20" data-aos="fade-right" data-aos-duration="1000">
           <div class="indicator">
             <span class="indicator-item indicator-start badge badge-secondary w-10 h-10 rounded-full mr-2 lg:w-20 lg:h-20 lg:mt-7 lg:ml-2"></span>
-            <img src="./img/ki-hajar-dewantara.png" class="max-w-[290px] md:max-w-xl lg:max-w-[524px] lg:mt-4 rounded-2xl shadow-2xl" />
+            <img src="./img/ki-hajar-dewantara.webp" class="max-w-[290px] md:max-w-xl lg:max-w-[524px] lg:mt-4 rounded-2xl shadow-2xl" />
           </div>
           <div>
             <h1 class="text-4xl leading-15 font-bold pt-4 text-accent md:text-5xl lg:text-5xl">Ki Hadjar Dewantara</h1>
             <h2 class="text-2xl leading-9 font-semibold pt-6 md:text-3xl lg:pt-2 lg:text-3xl">Bapak Pendidikan Nasional &<br>Pendiri Tamansiswa</h2>
             <p class="py-6 font-thin md:text-lg lg:text-lg">Ing ngarsa sung tulada, ing madya mangun karsa, tut wuri handayani. Di Depan, Seorang Pendidik harus memberi Teladan atau Contoh Tindakan Yang Baik, Di tengah atau di antara Murid, Guru harus menciptakan prakarsa dan ide, Dari belakang Seorang Guru harus Memberikan dorongan dan Arahan.</p>
             <div class="flex flex-col lg:flex-row gap-x-3">
-              <a href="https://id.wikipedia.org/wiki/Ki_Hadjar_Dewantara" target="_blank"><button class="btn btn-secondary px-6 py-3 mb-3 md:btn-lg">Selengkapnya</button></a>
+              <a href="https://id.wikipedia.org/wiki/Ki_Hadjar_Dewantara" target="_blank"><button class="btn btn-secondary px-6 py-3 mb-3 md:btn-lg" data-aos="fade-up" data-aos-duration="1000">Selengkapnya</button></a>
               <a href="#hubungi">
-                <button class="btn btn-outline px-6 py-3 md:btn-lg lg:ml-3">
+                <button class="btn btn-outline px-6 py-3 md:btn-lg lg:ml-3" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                 Hubungi<svg class="fill-current rotate-90 ml-1 lg:w-[20px] lg:h-[20px]" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
                 </button>
               </a>
@@ -176,9 +178,9 @@
     <div class="hero min-h-screen min-w-screen pt-3 pb-8" id="hubungi">
       <div class="hero-content text-center">
         <div class="max-w-md lg:max-w-none">
-          <h1 class="text-accent text-3xl font-bold md:text-5xl xl:pt-12">Hubungi Kami</h1>
-          <h2 class="text-md leading-9 font-normal pt-2 md:text-2xl lg:pt-4">Untuk mengetahui informasi lebih lanjut.</h2>
-          <div class="flex flex-col gap-y-5 lg:gap-x-10 w-full lg:flex-row border-opacity-50 pt-12">
+          <h1 class="text-accent text-3xl font-bold md:text-5xl xl:pt-12" data-aos="zoom-in" data-aos-duration="500">Hubungi Kami</h1>
+          <h2 class="text-md leading-9 font-normal pt-2 md:text-2xl lg:pt-4" data-aos="zoom-in" data-aos-duration="1000">Untuk mengetahui informasi lebih lanjut.</h2>
+          <div class="flex flex-col gap-y-5 lg:gap-x-10 w-full lg:flex-row border-opacity-50 pt-12" data-aos="fade-up-right" data-aos-duration="1000">
             <div class="card lg:w-96 bg-base-100 shadow-xl">
               <div class="card-body">
                 <div class="form-control w-full max-w-xs">
@@ -206,7 +208,7 @@
               </div>
             </div>
             <div class="divider lg:divider-horizontal">OR</div>
-            <div class="card lg:w-96 bg-base-100 shadow-xl">
+            <div class="card lg:w-96 bg-base-100 shadow-xl" data-aos="fade-up-left" data-aos-duration="1000">
               <div class="card-body">
                 <h1 class="text-xl font-medium lg:pt-3">Alamat</h1>
                 <span class="flex pt-2">
@@ -287,5 +289,12 @@
       <span class="mt-2 block h-4 w-4 rotate-45 border-t-2 border-l-2 border-base-100"></span>
     </a>
     <!-- Back to Top End -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
 </body>
 </html>
