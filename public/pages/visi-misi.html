@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" class="scroll-smooth" id="b">
+<html lang="en" data-theme="light" class="scroll-smooth" id="home">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visi dan Misi | Politeknik Internasional Tamansiswa Mojokerto</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/icon/logo-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="../dist/output.css">
-    <script src="./script/script.js" defer></script>
+    <script src="../script/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 </head>
 <body class="font-[Poppins]">
     <!-- Header start -->
-    <header class="fixed z-10 flex w-full items-center bg-transparent bg-base-100">
+    <header class="absolute z-10 flex w-full items-center bg-transparent">
       <div class="container">
         <nav class="navbar">
           <div class="navbar-start">
@@ -120,9 +117,9 @@
             <div class="hero-content flex-col pt-24 lg:flex-row-reverse md:pt-0 lg:pt-28 lg:gap-20">
                 <div>
                     <h1 class="border-b-2 border-current text-3xl text-center leading-15 font-bold pt-4 text-accent md:text-4xl md:pt-0 lg:text-5xl lg:leading-tight">Visi dan Misi POLITAMA</h1>
-                    <h2 class="text-xl leading-9 font-semibold pt-6 md:pt-3 lg:pt-9 lg:text-2xl">VISI</h2>
+                    <h2 class="text-primary text-xl leading-9 font-semibold pt-6 md:pt-3 lg:pt-9 lg:text-2xl">VISI</h2>
                     <p class="font-thin lg:text-lg">Menjadi Pusat Pendidikan Dan Pengembangan Vokasi Yang Menghasilkan Tenaga Ahli Yang Berdaya Saing Secara Internasional</p>
-                    <h2 class="text-xl leading-9 font-semibold pt-3 lg:pt-6 lg:text-2xl">MISI</h2>
+                    <h2 class="text-primary text-xl leading-9 font-semibold pt-3 lg:pt-6 lg:text-2xl">MISI</h2>
                     <ul class="list-disc">
                         <li><p class="font-thin lg:text-lg">Meningkatkan Kualitas Sumber Daya Yang Berpengetahuan , Berkeahlian, Dan Berbudaya</p></li>
                         <li><p class="font-thin lg:text-lg">Meningkatkan Sinergi Setiap Program Studi Dengan Kebutuhan Lapangan Kerja</p></li>
@@ -131,7 +128,7 @@
                         <li><p class="font-thin lg:text-lg">Meningkatkan Penguatan Kerjasama Dalam Mendukung Keberlanjutan  Pemanfaatan Sumber Daya Manusia Terampil</p></li>
                         <li><p class="font-thin lg:text-lg">Mewujudkan Tata Kelola Perguruan Tinggi Yang Baik</p></li>
                     </ul>
-                    <h2 class="text-xl leading-9 font-semibold pt-3 lg:pt-6 lg:text-2xl">TUJUAN</h2>
+                    <h2 class="text-primary text-xl leading-9 font-semibold pt-3 lg:pt-6 lg:text-2xl">TUJUAN</h2>
                     <ul class="list-disc">
                         <li><p class="font-thin lg:text-lg">Menghasilkan Lulusan Propesional Dan Kompeten Dibidangnya</p></li>
                         <li><p class="font-thin lg:text-lg">Menghasilkan Penelitian Terapan Dan Pengabdian Masyarakat Berbasis Iptek Dan Inovasi</p></li>
@@ -147,7 +144,7 @@
     <!-- Footer start -->
     <div class="bg-base-200 border-t border-current">
       <div class="container">
-        <footer class="footer p-10 text-base-content">
+        <footer class="footer p-10 text-base-content lg:text-[14px] xl:text-[16px]">
           <div>
             <div class="flex justify-center cursor-pointer items-center hover:scale-105 duration-300">
               <img src="../img/icon/logo-icon.svg" class="w-[50px] px-2 lg:w-[60px]" alt="logo-politama">
@@ -162,24 +159,27 @@
             <span class="footer-title">Beranda</span> 
             <a href="../main.html#sejarah" class="link link-hover">Sejarah</a> 
             <a href="../main.html#tokoh-nasional" class="link link-hover">Tokoh Nasional</a>
-            <a href="./visi-misi.html" class="link link-hover">Visi dan Misi</a>
+            <a href="../main.html#hubungi" class="link link-hover">Hubungi</a>
           </div> 
           <div>
             <span class="footer-title">Bidang Studi</span> 
             <a href="./teknologi-listrik.html" class="link link-hover">Teknologi Listrik</a> 
             <a href="./teknologi-mesin.html" class="link link-hover">Teknologi Mesin</a> 
             <a href="./teknologi-komputer.html" class="link link-hover">Teknologi Komputer</a>
-          </div> 
+          </div>
           <div>
-            <span class="footer-title">Media Sosial</span>
-            <div class="grid grid-flow-col gap-4">
-              <a href="mailto:info@politekniktamansiswa-mjk.ac.id"><img src="../img/icon/email.svg" alt="email-logo" class="w-[24px]"></a> 
-              <a href="https://www.instagram.com/politamamjk/" target="_blank"><img src="../img/icon/instagram.svg" alt="instagram-logo" class="w-[24px]"></a>
-            </div>
+            <span class="footer-title">Tentang Politama</span> 
+            <a href="./visi-misi.html" class="link link-hover">Visi dan Misi</a>
           </div>
         </footer>
       </div>
     </div>
     <!-- Footer end -->
+
+    <!-- Back to top start -->
+    <a href="#home" id="to-top" class="btn btn-primary fixed bottom-4 right-4 z-[9999] hidden h-12 w-12 lg:h-14 lg:w-14 mb-4 mr-4 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse">
+      <span class="mt-2 block h-4 w-4 rotate-45 border-t-2 border-l-2 border-base-100"></span>
+    </a>
+    <!-- Back to top end -->
 </body>
 </html>

@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" class="scroll-smooth" id="b">
+<html lang="en" data-theme="light" class="scroll-smooth" id="home">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teknologi Komputer | Politeknik Internasional Tamansiswa Mojokerto</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/icon/logo-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="../dist/output.css">
-    <script src="./script/script.js" defer></script>
+    <script src="../script/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 </head>
 <body class="font-[Poppins]">
     <!-- Header start -->
-    <header class="fixed z-10 flex w-full items-center bg-transparent bg-base-100">
+    <header class="absolute z-10 flex w-full items-center bg-transparent">
       <div class="container">
         <nav class="navbar">
           <div class="navbar-start">
@@ -25,14 +22,14 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:w-8 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
               </label>
               <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 border-[1px] border-current rounded-box w-30 font-medium">
-                <li><a href="#home" class="transition-colors duration-300 transform border-b-2 border-current mx-1.5 sm:mx-6 text-sm">Beranda</a></li>
+                <li><a href="../main.html" class="border-b-2 border-transparent transition-colors duration-300 transform hover:border-current mx-1.5 sm:mx-6 text-sm">Beranda</a></li>
                 <li tabindex="0">
                   <a class="justify-between border-b-2 border-transparent transition-colors duration-300 transform hover:border-current mx-1.5 sm:mx-6 text-sm">
                     Tentang Politama
                     <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
                   </a>
                   <ul class="pl-3">
-                    <li><a class="bg-base-200 border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105 text-sm" href="./pages/visi-misi.html">Visi dan misi</a></li>
+                    <li><a class="bg-base-200 border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105 text-sm" href="./visi-misi.html">Visi dan misi</a></li>
                   </ul>
                 </li>
                 <li tabindex="0">
@@ -41,9 +38,9 @@
                     <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
                   </a>
                   <ul class="pl-3">
-                    <li><a class="bg-base-200 border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105 text-sm" href="./pages/teknologi-listrik.html">Teknologi Listik</a></li>
-                    <li><a class="bg-base-200 border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105 text-sm" href="./pages/teknologi-mesin.html">Teknologi Mesin</a></li>
-                    <li><a class="bg-base-200 border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105 text-sm" href="./pages/teknologi-komputer.html">Teknologi Komputer</a></li>
+                    <li><a class="bg-base-200 border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105 text-sm" href="./teknologi-listrik.html">Teknologi Listik</a></li>
+                    <li><a class="bg-base-200 border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105 text-sm" href="./teknologi-mesin.html">Teknologi Mesin</a></li>
+                    <li><a class="bg-base-200 border-2 border-current text-sm" href="./teknologi-komputer.html">Teknologi Komputer</a></li>
                   </ul>
                 </li>
                 <div class="border-b border-current pb-2"></div>
@@ -57,7 +54,7 @@
             </div>
             <!-- Dropdown end -->
             <div class="flex justify-center cursor-pointer items-center hover:scale-105 duration-300">
-              <img src="./img/icon/logo-icon.svg" class="w-[50px] px-2 md:w-[70px] lg:w-[75px]" alt="logo-politama">
+              <img src="../img/icon/logo-icon.svg" class="w-[50px] px-2 md:w-[70px] lg:w-[75px]" alt="logo-politama">
               <span class="flex flex-col">
                   <h1 class="text-[10px] uppercase tracking-[4px] font-bold border-b border-current md:text-[16px] lg:text-[18px] lg:tracking-[6px]">Politama</h1>
                   <p class="font-semibold text-[7px] leading-[11px] pt-[1px] md:text-[10px] md:leading-4 lg:text-[12px] lg:leading-[16px]">Politeknik Internasional<br>Tamansiswa Mojokerto</p>
@@ -66,14 +63,16 @@
           </div>
           <div class="navbar-center hidden lg:flex lg:pr-5">
             <ul tabindex="0" class="menu menu-horizontal px-1 font-medium">
-              <li class="rounded-md border-b-2 border-current mx-1.5 sm:mx-6"><a href="#home">Beranda</a></li>
+              <li>
+                <a class="border-b-2 border-transparent transition-colors duration-300 transform hover:border-current mx-1.5 sm:mx-6" href="../main.html">Beranda</a>
+              </li>
               <li tabindex="0">
                 <a class="border-b-2 border-transparent transition-colors duration-300 transform hover:border-current mx-1.5 sm:mx-6">
                   Tentang Politama
                   <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
                 </a>
                 <ul class="p-2 pl-3 bg-base-100 lg:ml-5 lg:pl-2">
-                  <li><a class="border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105" href="./pages/visi-misi.html">Visi dan misi</a></li>
+                  <li><a class="border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105" href="./visi-misi.html">Visi dan misi</a></li>
                 </ul>
               </li>
               <li tabindex="0">
@@ -82,16 +81,16 @@
                   <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
                 </a>
                 <ul class="p-2 pl-6 bg-base-100 lg:ml-4 lg:pl-2">
-                  <li><a class="border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105" href="./pages/teknologi-listrik.html">Teknologi Listrik</a></li>
-                  <li><a class="border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105" href="./pages/teknologi-mesin.html">Teknologi Mesin</a></li>
-                  <li><a class="border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105" href="./pages/teknologi-komputer.html">Teknologi Komputer</a></li>
+                  <li><a class="border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105" href="./teknologi-listrik.html">Teknologi Listrik</a></li>
+                  <li><a class="border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105" href="./teknologi-mesin.html">Teknologi Mesin</a></li>
+                  <li><a class="border-2 border-current" href="./teknologi-komputer.html">Teknologi Komputer</a></li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="navbar-end">
             <!-- Search input --> 
-            <input type="text" placeholder="Cari Konten" class="input input-bordered input-xs w-full max-w-xs mr-5 xl:input-xs 2xl:input-md" />
+            <input type="text" placeholder="Cari Konten" class="hidden input input-bordered input-xs w-full max-w-xs mr-5 md:block xl:input-xs 2xl:input-md" />
             <!-- Nightmode toggle -->
             <span class="mr-2 pl-5 fill-slate-300 night:fill-current border-l-[2px] border-l-current md:pl-6">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" class="md:w-8 lg:w-[24px]" viewBox="0 0 24 24">
@@ -114,69 +113,69 @@
     </header>
     <!-- Header End -->
 
-    <!-- Teknik komputer start -->
-    <div class="container" id="teknologi-komputer">
-      <section class="hero min-h-screen bg-base-100 px-4 pb-7 lg:px-0">
-        <div class="hero-content flex-col lg:flex-row-reverse pt-20 lg:pt-20 lg:gap-24">
-          <div class="indicator">
-            <span class="indicator-item badge badge-secondary w-12 h-12 lg:w-14 lg:h-14 lg:mt-7"></span>
-            <img src="../img/teknologi-komputer-img/title-img.jpg" class="max-w-[290px] lg:max-w-lg lg:mt-7 rounded-2xl shadow-2xl"/>
+    <!-- Welcome start -->
+    <div class="border-b border-current">
+      <div class="container" id="teknologi-listrik">
+        <section class="hero min-h-screen bg-base-100 px-4 pb-7 lg:px-0">
+          <div class="hero-content flex-col lg:flex-row-reverse pt-24 md:pt-32 lg:pt-20 lg:gap-x-10 xl:gap-x-44">
+            <div class="indicator">
+              <span class="indicator-item badge badge-primary rounded-full w-12 h-12 md:mr-4 md:w-24 md:h-24 lg:w-24 lg:h-24 lg:mr-2 lg:mt-7"></span>
+              <img src="../img/teknologi-komputer-img/title-img.jpg" class="max-w-[290px] md:max-w-[600px] lg:max-w-md xl:max-w-xl lg:mt-7 rounded-3xl shadow-2xl"/>
+            </div>
+            <div>
+              <h1 class="text-5xl font-bold pt-6 text-accent md:text-7xl lg:text-6xl lg:leading-tight">Teknologi Komputer</h1>
+              <h2 class="text-3xl leading-9 font-semibold pt-2 md:text-4xl md:pt-4 lg:pt-4 lg:pb-4">Politeknik Internasional<br>Tamansiswa Mojokerto</h2>
+              <a href="#profil-lulusan-komputer">
+                <button class="btn btn-primary px-6 py-3 mt-4 md:btn-lg">Selengkapnya
+                <svg class="fill-current rotate-90 ml-1 lg:ml-1 lg:w-[20px] lg:h-[20px]" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+                </button>
+              </a>
+            </div>
           </div>
-          <div>
-            <h1 class="text-5xl font-bold pt-6 text-accent lg:text-6xl lg:leading-tight">Teknologi Komputer</h1>
-            <h2 class="text-3xl leading-9 font-semibold pt-2 lg:pt-2 lg:pb-4">Politeknik Internasional<br>Tamansiswa Mojokerto</h2>
-            <a href="#profil-lulusan-komputer">
-              <button class="btn btn-primary px-6 py-3 mt-4">Selengkapnya
-              <svg class="fill-current rotate-90 ml-1 lg:ml-1 lg:w-[20px] lg:h-[20px]" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
-              </button>
-            </a>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
-    <!-- Teknik komputer end -->
-    <div class="divider"></div>
+    <!-- Welcome end -->
 
     <!-- Profile lulusan start -->
-    <div class="bg-base-200">
-    <div class="container" id="profil-lulusan-komputer">
-      <section class="hero min-h-screen bg-transparent px-4 lg:px-0">
-        <div class="hero-content flex-col pt-14 lg:flex-row lg:gap-x-36">
-          <div class="indicator">
-            <span class="indicator-item badge badge-secondary w-12 h-12 lg:w-14 lg:h-14 lg:mt-7"></span>
-            <img src="../img/teknologi-komputer-img/profil-lulusan-img.jpg" class="max-w-[290px] lg:max-w-md lg:mt-7 rounded-2xl shadow-2xl"/>
+    <div class="bg-base-200 border-b border-current">
+      <div class="container" id="profil-lulusan-komputer">
+        <section class="hero min-h-screen px-4 lg:px-0">
+          <div class="flex-col lg:hero-content pt-10 lg:my-32 lg:flex-row">
+            <div class="indicator">
+              <span class="indicator-item indicator-start badge badge-secondary w-12 h-12 mr-2 rounded-full md:mr-4 md:w-24 md:h-24 lg:w-24 lg:h-24 lg:ml-14 lg:mr-2 lg:mt-7"></span>
+              <img src="../img/teknologi-komputer-img/profil-lulusan-img.jpg" class="max-w-[310px] md:max-w-[610px] lg:max-w-lg lg:mt-7 lg:ml-14 xl:mr-20 rounded-3xl shadow-2xl"/>
+            </div>
+            <div class="xl:mr-10">
+              <h2 class="text-2xl text-accent leading-9 font-semibold pt-4 md:text-4xl md:pb-2 lg:pt-6 lg:pb-2 lg:text-5xl lg:leading-tight">Profile Lulusan :</h2>
+              <ul class="list-decimal md:text-2xl lg:text-3xl md:leading-8 lg:leading-[50px]">
+                <li><p class="text-lg font-normal leading-8 md:text-2xl lg:text-3xl">Network and Computer System Administrator</p></li>
+                <li><p class="text-lg font-normal leading-8 md:text-2xl lg:text-3xl">IoT Developer</p></li>
+              </ul>
+              <a href="#visi-misi-mesin">
+                <button class="btn btn-secondary px-6 py-3 mt-4 md:btn-lg lg:mt-8">Visi & Misi
+                <svg class="fill-current rotate-90 ml-1 lg:ml-1 lg:w-[20px] lg:h-[20px]" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+                </button>
+              </a>
+            </div>
           </div>
-          <div>
-            <h2 class="text-2xl text-accent leading-9 font-semibold pt-4 lg:pt-6 lg:pb-2 lg:text-4xl lg:leading-tight">Profile Lulusan :</h2>
-            <ul class="list-decimal lg:text-2xl lg:leading-8">
-              <li><p class="text-lg font-normal leading-8 lg:text-2xl">Network and Computer System Administrator</p></li>
-              <li><p class="text-lg font-normal leading-8 lg:text-2xl">IoT Developer</p></li>
-            </ul>
-            <a href="#visi-misi-komputer">
-              <button class="btn btn-primary px-6 py-3 mt-4">Visi & Misi
-              <svg class="fill-current rotate-90 ml-1 lg:ml-1 lg:w-[20px] lg:h-[20px]" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
-              </button>
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
     </div>
     <!-- Profile lulusan end -->
-    <div class="divider"></div>
 
     <!-- Visi dan misi start -->
-    <div class="container" id="visi-misi-komputer">
+    <div class="container" id="visi-misi-mesin">
       <section class="hero min-h-screen bg-base-100 px-4 lg:px-0 ">
-        <div class="hero-content flex-col lg:flex-row lg:gap-20">
+        <div class="hero-content flex-col my-12 lg:flex-row lg:gap-20">
           <div>
-            <h2 class="text-2xl text-accent leading-9 font-semibold lg:pt-0 lg:text-3xl lg:pb-2">VISI :</h2>
-            <p class="text-lg font-normal leading-8 lg:text-xl lg:leading-8">Menjadi Program Studi yang Unggul, Inovatif, Berwawasan Global, Bereputasi Internasional, dan Kreatif Dalam Bidang Teknologi Komputer.</p>
-            <h2 class="text-2xl text-accent leading-9 font-semibold pt-3 lg:pt-20 lg:text-3xl lg:pb-2">MISI :</h2>
-            <ul class="list-disc lg:leading-8">
-              <li><p class="text-lg font-normal leading-8 lg:text-xl">Menyelenggarakan Pendidikan yang Berorientasi dan Berinovasi Pada Kebutuhan Masyarakat Serta Reputasi Internasional</p></li>
-              <li><p class="text-lg font-normal leading-8 lg:text-xl">Menyelenggarakan Penelitian yang Terkini dan Inovatif Dalam Bidang Teknologi Komputer Termasuk Didalamnya Adalah Pengembangan Riset Jaringan Komputer, Internet of Things, dan Data Science</p></li>
-              <li><p class="text-lg font-normal leading-8 lg:text-xl">Menghasilkan Lulusan yang Siap Kerja, Profesional, Kreatif Serta Menguasai Teknologi Masa Depan di Bidang Teknologi Komputer</p></li>
+            <h2 class="text-2xl text-accent leading-9 font-semibold md:text-4xl md:pb-2 lg:pt-0 lg:text-3xl lg:pb-2">VISI :</h2>
+            <p class="text-lg font-normal leading-8 md:text-2xl md:leading-8 md:pb-10 lg:pb-6 lg:text-xl lg:leading-8">Menjadi Program Studi yang Unggul, Inovatif, Berwawasan Global, Bereputasi Internasional, dan Kreatif Dalam Bidang Teknologi Komputer.</p>
+            <h2 class="text-2xl text-accent leading-9 font-semibold pt-3 md:text-4xl md:pb-2 lg:pt-20 lg:text-3xl lg:pb-2">MISI :</h2>
+            <ul class="list-disc md:text-2xl md:leading-8 lg:leading-8">
+              <li><p class="text-lg font-normal leading-8 md:text-2xl lg:text-xl">Menyelenggarakan Pendidikan yang Berorientasi dan Berinovasi Pada Kebutuhan Masyarakat Serta Reputasi Internasional</p></li>
+              <li><p class="text-lg font-normal leading-8 md:text-2xl lg:text-xl">Menyelenggarakan Penelitian yang Terkini dan Inovatif Dalam Bidang Teknologi Komputer Termasuk Didalamnya Adalah Pengembangan Riset Jaringan Komputer, Internet of Things, dan Data Science</p></li>
+              <li><p class="text-lg font-normal leading-8 md:text-2xl lg:text-xl">Menghasilkan Lulusan yang Siap Kerja, Profesional, Kreatif Serta Menguasai Teknologi Masa Depan di Bidang Teknologi Komputer</p></li>
             </ul>
           </div>
         </div>
@@ -185,57 +184,44 @@
     <!-- Visi dan misi end -->
 
     <!-- Footer start -->
-    <div class="container bg-base-200 border-t border-current">
-      <footer class="footer p-10 text-base-content">
-        <div>
-          <div class="flex justify-center cursor-pointer items-center hover:scale-105 duration-300">
-            <img src="../img/icon/logo-icon.svg" class="w-[50px] px-2 lg:w-[60px]" alt="logo-politama">
-            <span class="flex flex-col">
-                <h1 class="text-[10px] uppercase tracking-[4px] font-bold border-b border-current lg:text-[12px] lg:tracking-[6px]">Politama</h1>
-                <p class="font-semibold text-[7px] leading-[11px] pt-[1px] lg:text-[9px] lg:leading-[13px]">Politeknik Internasional<br>Tamansiswa Mojokerto</p>
-            </span>
+    <div class="bg-base-200 border-t border-current">
+      <div class="container">
+        <footer class="footer p-10 text-base-content lg:text-[14px] xl:text-[16px]">
+          <div>
+            <div class="flex justify-center cursor-pointer items-center hover:scale-105 duration-300">
+              <img src="../img/icon/logo-icon.svg" class="w-[50px] px-2 lg:w-[60px]" alt="logo-politama">
+              <span class="flex flex-col">
+                  <h1 class="text-[10px] uppercase tracking-[4px] font-bold border-b border-current lg:text-[12px] lg:tracking-[6px]">Politama</h1>
+                  <p class="font-semibold text-[7px] leading-[11px] pt-[1px] lg:text-[9px] lg:leading-[13px]">Politeknik Internasional<br>Tamansiswa Mojokerto</p>
+              </span>
+            </div>
+            <p><br/>Jl. Tamansiswa No 30, Kota Mojokerto, Jawa Timur, 61311<br></p>
+          </div> 
+          <div>
+            <span class="footer-title">Beranda</span> 
+            <a href="../main.html#sejarah" class="link link-hover">Sejarah</a> 
+            <a href="../main.html#tokoh-nasional" class="link link-hover">Tokoh Nasional</a>
+            <a href="../main.html#hubungi" class="link link-hover">Hubungi</a>
+          </div> 
+          <div>
+            <span class="footer-title">Bidang Studi</span> 
+            <a href="./teknologi-listrik.html" class="link link-hover">Teknologi Listrik</a> 
+            <a href="./teknologi-mesin.html" class="link link-hover">Teknologi Mesin</a> 
+            <a href="./teknologi-komputer.html" class="link link-hover">Teknologi Komputer</a>
           </div>
-          <p><br/>Jl. Tamansiswa No 30, Kota Mojokerto, Jawa Timur, 61311<br></p>
-        </div> 
-        <div>
-          <span class="footer-title">Beranda</span> 
-          <a href="../main.html#sejarah" class="link link-hover">Sejarah</a> 
-          <a href="../main.html#tokoh-nasional" class="link link-hover">Tokoh Nasional</a>
-          <a href="./visi-misi.html" class="link link-hover">Visi dan Misi</a>
-        </div> 
-        <div>
-          <span class="footer-title">Bidang Studi</span> 
-          <a href="./teknologi-listrik.html" class="link link-hover">Teknologi Listrik</a> 
-          <a href="./teknologi-mesin.html" class="link link-hover">Teknologi Mesin</a> 
-          <a href="./teknologi-komputer.html" class="link link-hover">Teknologi Komputer</a>
-        </div> 
-        <div>
-          <span class="footer-title">Media Sosial</span>
-          <div class="grid grid-flow-col gap-4">
-            <a href="mailto:info@politekniktamansiswa-mjk.ac.id"><img src="./img/email.svg" alt="email-logo" class="w-[24px]"></a> 
-            <a href="https://www.instagram.com/politamamjk/" target="_blank"><img src="./img/instagram.svg" alt="instagram-logo" class="w-[24px]"></a>
+          <div>
+            <span class="footer-title">Tentang Politama</span> 
+            <a href="./visi-misi.html" class="link link-hover">Visi dan Misi</a>
           </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
     <!-- Footer end -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-    <script>
-      VANTA.NET({
-        el: "#profil-lulusan-komputer",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0xe7afc3,
-        backgroundColor: 0x141418,
-        points: 14.00,
-        maxDistance: 19.00
-      })
-      </script> -->
+
+    <!-- Back to top start -->
+    <a href="#home" id="to-top" class="btn btn-primary fixed bottom-4 right-4 z-[9999] hidden h-12 w-12 lg:h-14 lg:w-14 mb-4 mr-4 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse">
+      <span class="mt-2 block h-4 w-4 rotate-45 border-t-2 border-l-2 border-base-100"></span>
+    </a>
+    <!-- Back to top end -->
 </body>
 </html>
