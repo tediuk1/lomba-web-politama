@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda | Politeknik Internasional Tamansiswa Mojokerto</title>
     <link rel="shortcut icon" href="./img/icon/logo-icon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./dist/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./dist/final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="./script/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 </head>
 <body class="font-[Poppins]">
     <!-- Header start -->
-    <header class="absolute z-10 flex w-full items-center bg-transparent">
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
       <div class="container">
         <nav class="navbar">
           <div class="navbar-start">
@@ -45,17 +47,10 @@
                     <li><a class="bg-base-200 border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105 text-sm" href="./pages/teknologi-komputer.html">Teknologi Komputer</a></li>
                   </ul>
                 </li>
-                <div class="border-b border-current pb-2"></div>
-                <div class="form-control w-full max-w-xs text-sm">
-                  <label class="label">
-                    <span class="label-text">Cari Konten</span>
-                  </label>
-                  <input type="text" placeholder="Ketik disini" class="input input-bordered w-full max-w-xs" />
-                </div>
               </ul>
             </div>
             <!-- Dropdown end -->
-            <div class="animate__animated animate__pulse animate__slow 1s flex justify-center cursor-pointer items-center hover:scale-105 duration-300">
+            <div class="flex justify-center cursor-pointer items-center hover:scale-105 duration-300">
               <img src="./img/icon/logo-icon.svg" class="w-[50px] px-2 md:w-[70px] lg:w-[75px]" alt="logo-politama">
               <span class="flex flex-col">
                   <h1 class="text-[10px] uppercase tracking-[4px] font-bold border-b border-current md:text-[16px] lg:text-[18px] lg:tracking-[6px]">Politama</h1>
@@ -63,7 +58,7 @@
               </span>
             </div>
           </div>
-          <div class="navbar-center hidden lg:flex lg:pr-5">
+          <div class="navbar-center hidden pl-24 lg:flex">
             <ul tabindex="0" class="menu menu-horizontal px-1 font-medium">
               <li class="rounded-md border-b-2 border-current mx-1.5 sm:mx-6"><a href="#home">Beranda</a></li>
               <li tabindex="0">
@@ -89,10 +84,8 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <!-- Search input --> 
-            <input type="text" placeholder="Cari Konten" class="hidden input input-bordered input-xs w-full max-w-xs mr-5 md:block xl:input-xs 2xl:input-md" />
             <!-- Nightmode toggle -->
-            <span class="mr-2 pl-5 fill-slate-300 night:fill-current border-l-[2px] border-l-current md:pl-6">
+            <span class="mr-2 fill-slate-300 night:fill-current border-l-[2px] border-l-current md:pl-6">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" class="md:w-8 lg:w-[24px]" viewBox="0 0 24 24">
                 <path
                   d="M12.3 4.9c.4-.2.6-.7.5-1.1s-.6-.8-1.1-.8C6.8 3.1 3 7.1 3 12c0 5 4 9 9 9 3.8 0 7.1-2.4 8.4-5.9.2-.4 0-.9-.4-1.2-.4-.3-.9-.2-1.2.1-1 .9-2.3 1.4-3.7 1.4-3.1 0-5.7-2.5-5.7-5.7 0-1.9 1.1-3.8 2.9-4.8zm2.8 12.5c.5 0 1 0 1.4-.1-1.2 1.1-2.8 1.7-4.5 1.7-3.9 0-7-3.1-7-7 0-2.5 1.4-4.8 3.5-6-.7 1.1-1 2.4-1 3.8-.1 4.2 3.4 7.6 7.6 7.6z"
@@ -115,17 +108,18 @@
 
     <!-- Welcome start -->
     <div class="container" id="home">
-      <section class="hero min-h-screen bg-base-100 px-4 pb-8 lg:px-0">
+      <section class="hero min-h-screen bg-base-100 px-4 mb-20 lg:px-0">
         <div class="hero-content flex-col lg:flex-row-reverse pt-24 md:pt-32 lg:pt-12 lg:gap-x-28">
           <div class="indicator" data-aos="zoom-in" data-aos-duration="500">
-            <span class="indicator-item badge badge-primary w-10 h-10 mr-2 md:mt-4 md:mr-8 md:w-24 md:h-24 rounded-full lg:w-24 lg:h-24 lg:mt-7 lg:mr-5"></span>
-            <img src="./img/politama.webp" class="max-w-[290px] md:max-w-[600px] lg:max-w-md xl:max-w-xl lg:mt-7 rounded-3xl shadow-2xl" />
+            <span class="z-[-3] blur-[180px] indicator-item badge badge-primary w-24 h-24 mt-10 mr-10 md:mt-4 md:mr-8 md:w-24 md:h-24 rounded-full lg:w-36 lg:h-36 lg:mt-28 lg:mr-12"></span>
+            <span class="z-[-3] blur-[180px] indicator-item badge badge-primary w-24 h-24 mt-10 mr-10 md:mt-4 md:mr-8 md:w-24 md:h-24 rounded-full lg:w-32 lg:h-32 lg:mt-[500px] lg:mr-[1200px]"></span>
+            <img src="./img/politama.webp" class="max-w-[290px] md:max-w-[600px] lg:max-w-md xl:max-w-xl lg:mt-7 rounded-[80px] shadow-2xl" />
           </div>
           <div>
             <h1 class="text-5xl leading-15 font-bold pt-4 text-accent md:text-7xl lg:text-3xl xl:text-6xl" data-aos="fade-right">Selamat Datang</h1>
             <h2 class="text-3xl leading-9 font-semibold pt-6 md:pt-3 md:text-4xl lg:text-2xl lg:pt-3 xl:text-3xl" data-aos="fade-right" data-aos-duration="500">di Website Politeknik Internasional<br>Tamansiswa Mojokerto</h2>
             <p class="py-6 font-thin md:text-xl lg:text-lg" data-aos="fade-right" data-aos-duration="1000">Kami harap Anda akan menikmati pengalaman belajar di Politeknik Internasional Tamansiswa Mojokerto dan menemukan banyak hal baru.<br>Selamat berpetualang!.</p>
-            <a href="#sejarah"><button class="btn btn-primary px-6 py-3 md:btn-lg" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">Sejarah Tamansiswa</button></a>
+            <a href="#sejarah"><button class="btn btn-primary px-6 py-3 md:btn-lg" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">Sejarah Tamansiswa</button></a>
           </div>
         </div>
       </section>
@@ -135,14 +129,14 @@
     <!-- Sejarah start -->
     <section class="hero min-h-screen bg-fixed" id="sejarah" style="background-image: url(./img/gedung.webp);">
       <div class="hero-overlay bg-opacity-70"></div>
-      <div class="hero-content px-12 my-7 text-neutral-content" data-aos="fade-up" data-aos-duration="1500">
+      <div class="hero-content px-12 mt-14 mb-14 text-neutral-content" data-aos="fade-up" data-aos-duration="1500">
         <div class="max-w-md lg:max-w-4xl">
-          <h1 class="mb-5 pb-4 text-3xl text-center text-accent font-bold border-b-4 border-base-100 md:text-5xl lg:text-5xl xl:pt-14">Sejarah Tamansiswa</h1>
+          <h1 class="mb-5 pb-4 text-3xl text-center text-accent font-bold border-b-4 border-base-100 md:text-5xl lg:text-5xl xl:pt-12">Sejarah Tamansiswa</h1>
           <p class="mb-5 text-md font-normal md:text-lg lg:text-lg">Tanggal <span class="font-semibold">3 Juli 1922</span> merupakan hari yang bersejarah bagi bangsa Indonesia dengan lahirnya Perguruan Tamansiswa disebut Yayasan Persatuan Perguruan Tamansiswa yang berpusat di Yogyakarta ( Majelis Luhur).<br><br>
             Tamansiswa adalah sebuah Perguruan Nasional yang berwawasan kebangsaan serta bertujuan untuk mengentaskan bangsa Indonesia dari kebodohan, kemiskinan dan keterbelakangan. Tamansiswa sebagai Badan Perjuangan Kebudayaan dan Pembangunan masyarakat dengan Pendidikan sebagai sarana utamanya dalam arti luas dimana selalu ingin meningkatkan kualitas pengabdian pada Masyarakat, Nusa dan Bangsa.<br><br>
             Tamansiswa menamakan dirinya “Perguruan” dalam bahasa jawa <span class="font-bold">“Paguron”</span>. Paguron dari asal guru arti harafiahnya rumah tempat tinggal guru, tempat orang datang berguru. Paguron sebenarnya tidak hanya tempat maupun pusat belajar, tetapi juga merupakan sumber ajaran ilmu pengetahuan, sumber ajaran hidup (Life skill).
             .</p>
-          <a href="#tokoh-nasional"><button class="btn btn-primary md:btn-lg xl:mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Tokoh Nasional</button></a>
+          <a href="#tokoh-nasional"><button class="btn btn-primary md:btn-lg xl:mb-8" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Tokoh Nasional</button></a>
         </div>
       </div>
     </section>
@@ -151,7 +145,7 @@
     <!-- Tokoh nasional start -->
     <div class="container bg-base-200 border-b border-current" id="tokoh-nasional">
       <section class="hero min-h-screen px-4 lg:px-0">
-        <div class="hero-content flex-col lg:flex-row pt-24 lg:pt-0 lg:gap-20" data-aos="fade-right" data-aos-duration="1000">
+        <div class="hero-content flex-col lg:flex-row pt-24 mb-16 lg:mb-0 lg:pt-0 lg:gap-20" data-aos="fade-right" data-aos-duration="1000">
           <div class="indicator">
             <span class="indicator-item indicator-start badge badge-secondary w-10 h-10 rounded-full mr-2 lg:w-20 lg:h-20 lg:mt-7 lg:ml-2"></span>
             <img src="./img/ki-hajar-dewantara.webp" class="max-w-[290px] md:max-w-xl lg:max-w-[524px] lg:mt-4 rounded-2xl shadow-2xl" />
@@ -163,7 +157,7 @@
             <div class="flex flex-col lg:flex-row gap-x-3">
               <a href="https://id.wikipedia.org/wiki/Ki_Hadjar_Dewantara" target="_blank"><button class="btn btn-secondary px-6 py-3 mb-3 md:btn-lg" data-aos="fade-up" data-aos-duration="1000">Selengkapnya</button></a>
               <a href="#hubungi">
-                <button class="btn btn-outline px-6 py-3 md:btn-lg lg:ml-3" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <button class="btn btn-outline px-6 py-3 md:btn-lg lg:ml-3" data-aos="fade-up" data-aos-duration="500">
                 Hubungi<svg class="fill-current rotate-90 ml-1 lg:w-[20px] lg:h-[20px]" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
                 </button>
               </a>
@@ -176,7 +170,9 @@
 
     <!-- Hubungi start -->
     <div class="hero min-h-screen min-w-screen pt-3 pb-8" id="hubungi">
-      <div class="hero-content text-center">
+      <span class="absolute z-[-3] blur-[200px] indicator-item badge badge-primary w-24 h-24 mt-10 mr-10 md:mt-4 md:mr-8 md:w-24 md:h-24 rounded-full lg:w-36 lg:h-36 lg:mb-[500px] lg:ml-[1400px]"></span>
+      <span class="z-[-3] blur-[200px] indicator-item badge badge-primary w-24 h-24 mt-10 mr-10 md:mt-4 md:mr-8 md:w-24 md:h-24 rounded-full lg:w-32 lg:h-32 lg:mt-[500px] lg:mr-[1500px]"></span>
+      <div class="hero-content text-center mt-20 mb-16 lg:mt-6">
         <div class="max-w-md lg:max-w-none">
           <h1 class="text-accent text-3xl font-bold md:text-5xl xl:pt-12" data-aos="zoom-in" data-aos-duration="500">Hubungi Kami</h1>
           <h2 class="text-md leading-9 font-normal pt-2 md:text-2xl lg:pt-4" data-aos="zoom-in" data-aos-duration="1000">Untuk mengetahui informasi lebih lanjut.</h2>
@@ -286,14 +282,14 @@
 
     <!-- Back to Top Start -->
     <a href="#home" id="to-top" class="btn btn-primary fixed bottom-4 right-4 z-[9999] hidden h-12 w-12 lg:h-14 lg:w-14 mb-4 mr-4 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse">
-      <span class="mt-2 block h-4 w-4 rotate-45 border-t-2 border-l-2 border-base-100"></span>
+      <span class="mt-[2px] lg:mt-2 block h-4 w-4 rotate-45 border-t-2 border-l-2 border-base-100"></span>
     </a>
     <!-- Back to Top End -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        once: true,
+        once: false,
       });
     </script>
 </body>

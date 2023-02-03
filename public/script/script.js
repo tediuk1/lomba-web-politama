@@ -1,4 +1,4 @@
-// Navbar Fixed
+// Navbar Fixed dan Back to top button
 window.onscroll = function () {
   const header = document.querySelector("header");
   const fixedNav = header.offsetTop;

@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teknologi Mesin | Politeknik Internasional Tamansiswa Mojokerto</title>
     <link rel="shortcut icon" href="../img/icon/logo-icon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../dist/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../dist/final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="../script/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
@@ -24,7 +26,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:w-8 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
               </label>
               <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 border-[1px] border-current rounded-box w-30 font-medium">
-                <li><a href="../main.html" class="border-b-2 border-transparent transition-colors duration-300 transform hover:border-current mx-1.5 sm:mx-6 text-sm">Beranda</a></li>
+                <li><a href="../index.html" class="border-b-2 border-transparent transition-colors duration-300 transform hover:border-current mx-1.5 sm:mx-6 text-sm">Beranda</a></li>
                 <li tabindex="0">
                   <a class="justify-between border-b-2 border-transparent transition-colors duration-300 transform hover:border-current mx-1.5 sm:mx-6 text-sm">
                     Tentang Politama
@@ -45,13 +47,6 @@
                     <li><a class="bg-base-200 border-[1px] border-transparent transition-all duration-300 transform hover:border-current hover:scale-105 text-sm" href="./teknologi-komputer.html">Teknologi Komputer</a></li>
                   </ul>
                 </li>
-                <div class="border-b border-current pb-2"></div>
-                <div class="form-control w-full max-w-xs text-sm">
-                  <label class="label">
-                    <span class="label-text">Cari Konten</span>
-                  </label>
-                  <input type="text" placeholder="Ketik disini" class="input input-bordered w-full max-w-xs" />
-                </div>
               </ul>
             </div>
             <!-- Dropdown end -->
@@ -63,10 +58,10 @@
               </span>
             </div>
           </div>
-          <div class="navbar-center hidden lg:flex lg:pr-5">
+          <div class="navbar-center hidden pl-24 lg:flex">
             <ul tabindex="0" class="menu menu-horizontal px-1 font-medium">
               <li>
-                <a class="border-b-2 border-transparent transition-colors duration-300 transform hover:border-current mx-1.5 sm:mx-6" href="../main.html">Beranda</a>
+                <a class="border-b-2 border-transparent transition-colors duration-300 transform hover:border-current mx-1.5 sm:mx-6" href="../index.html">Beranda</a>
               </li>
               <li tabindex="0">
                 <a class="border-b-2 border-transparent transition-colors duration-300 transform hover:border-current mx-1.5 sm:mx-6">
@@ -91,8 +86,6 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <!-- Search input --> 
-            <input type="text" placeholder="Cari Konten" class="hidden input input-bordered input-xs w-full max-w-xs mr-5 md:block xl:input-xs 2xl:input-md" />
             <!-- Nightmode toggle -->
             <span class="mr-2 pl-5 fill-slate-300 night:fill-current border-l-[2px] border-l-current md:pl-6">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" class="md:w-8 lg:w-[24px]" viewBox="0 0 24 24">
@@ -128,7 +121,7 @@
               <h1 class="text-5xl font-bold pt-6 text-accent md:text-7xl lg:text-6xl lg:leading-tight" data-aos="fade-right">Teknologi Mesin</h1>
               <h2 class="text-3xl leading-9 font-semibold pt-2 md:text-4xl md:pt-4 lg:pt-2 lg:pb-4" data-aos="fade-right" data-aos-duration="500">Politeknik Internasional<br>Tamansiswa Mojokerto</h2>
               <a href="#profil-lulusan-mesin">
-                <button class="btn btn-primary px-6 py-3 mt-4 md:btn-lg" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">Selengkapnya
+                <button class="btn btn-primary px-6 py-3 mt-4 md:btn-lg" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">Selengkapnya
                 <svg class="fill-current rotate-90 ml-1 lg:ml-1 lg:w-[20px] lg:h-[20px]" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
                 </button>
               </a>
@@ -201,9 +194,9 @@
           </div> 
           <div>
             <span class="footer-title">Beranda</span> 
-            <a href="../main.html#sejarah" class="link link-hover">Sejarah</a> 
-            <a href="../main.html#tokoh-nasional" class="link link-hover">Tokoh Nasional</a>
-            <a href="../main.html#hubungi" class="link link-hover">Hubungi</a>
+            <a href="../index.html#sejarah" class="link link-hover">Sejarah</a> 
+            <a href="../index.html#tokoh-nasional" class="link link-hover">Tokoh Nasional</a>
+            <a href="../index.html#hubungi" class="link link-hover">Hubungi</a>
           </div> 
           <div>
             <span class="footer-title">Bidang Studi</span> 
@@ -220,16 +213,16 @@
     </div>
     <!-- Footer end -->
 
-    <!-- Back to top start -->
+    <!-- Back to Top Start -->
     <a href="#home" id="to-top" class="btn btn-primary fixed bottom-4 right-4 z-[9999] hidden h-12 w-12 lg:h-14 lg:w-14 mb-4 mr-4 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse">
-      <span class="mt-2 block h-4 w-4 rotate-45 border-t-2 border-l-2 border-base-100"></span>
+      <span class="mt-[2px] lg:mt-2 block h-4 w-4 rotate-45 border-t-2 border-l-2 border-base-100"></span>
     </a>
-    <!-- Back to top end -->
+    <!-- Back to Top End -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        once: true,
+        once: false,
       });
     </script>
 </body>
