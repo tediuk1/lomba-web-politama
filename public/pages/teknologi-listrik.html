@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teknologi Listrik | Politeknik Internasional Tamansiswa Mojokerto</title>
     <link rel="shortcut icon" href="../img/icon/logo-icon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../dist/final.css">
+    <link rel="stylesheet" href="../dist/build.css">
+    <link rel="stylesheet" href="../dist/loader.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,6 +16,8 @@
     <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 </head>
 <body class="font-[Poppins]">
+    <div id="preloader"></div>
+
     <!-- Header start -->
     <header class="absolute z-10 flex w-full items-center bg-transparent">
       <div class="container">
@@ -225,6 +228,14 @@
     <script>
       AOS.init({
         once: false,
+      });
+    </script>
+
+    <script>
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function() {
+        loader.style.display = "none";
       });
     </script>
 </body>
