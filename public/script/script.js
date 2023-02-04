@@ -14,3 +14,10 @@ window.onscroll = function () {
     toTop.classList.add("hidden");
   }
 };
+
+// Loader
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function() {
+  loader.style.display = "none";
+});
